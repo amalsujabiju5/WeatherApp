@@ -1,5 +1,5 @@
-const apiKey = "bc87ac922a6b4de682f8bfd4a7999161";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiKey = "PUT YOUR API KEY";
+const apiUrl = "PUT YOUR URL";
 
 // these are the things which have a changing value
 const searchBox = document.querySelector(".search-box input");
