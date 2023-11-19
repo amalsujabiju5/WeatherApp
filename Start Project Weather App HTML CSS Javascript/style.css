@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+ background: url(images/background.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.search-box {
+  position: relative;
+  width: 100%;
+  /* Removed border property */
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.search-box input {
+  position: relative;
+  width: 97%;
+  /* Adjust the left value to move the placeholder more to the right */
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  /* Added border-radius for the input */
+  color: #fff;
+  font-size: medium;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 40px;
+  /* Create space for the icon */
+}
+
+.search-box input::placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.search-box button {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 28px;
+  color: #fff;
+  padding: auto;
+}
+
+/* Move the map icon inside the search box and add space between the icon and placeholder */
+.search-box .bx.bxs-map {
+  position: absolute;
+  left: 10px;
+  /* Adjust the value as needed for proper placement */
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  color: #fff;
+  margin-right: 10px;
+  /* Add space between the icon and placeholder */
+}
+
+.weather-box{
+  text-align: center;
+  margin: 40px 0;
+}
+
+.weather-box img{
+  width: 50%;
+  
+}
+
+.temperature{
+position: relative;
+font-size: 54PX;
+line-height: 1;
+
+}
+
+.temperature span{
+  position: absolute;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.description{
+ font-weight: 500;
+    font-size: 20PX;
+    text-transform: capitalize;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1edcb6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 400px;
+  position: relative;
+  height: 555px;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+
+}
+.search-box {
+  position: relative;
+  width: 100%;
+  /* Removed border property */
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.search-box input {
+  position: relative;
+  width: 97%;
+  /* Adjust the left value to move the placeholder more to the right */
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  /* Added border-radius for the input */
+  color: #fff;
+  font-size: medium;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 40px;
+
+  /* Create space for the icon */
+}
+
+
+.search-box input::placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.search-box button {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 28px;
+  color: #fcf4f4;
+  padding: auto;
+
+  /* Add a color transition effect */
+}
+
+
+/* Move the map icon inside the search box and add space between the icon and placeholder */
+.search-box .bx.bxs-map {
+  position: absolute;
+  left: 10px;
+  /* Adjust the value as needed for proper placement */
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  color: #fff;
+  margin-right: 10px;
+  /* Add space between the icon and placeholder */
+}
+
+.weather-box {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.weather-box,.weather-details,.not-found{
+  visibility: hidden;
+}
+
+.weather-box.active,.weather-details.active,.not-found.active{
+  visibility: visible;
+}
+.weather-box img {
+  width: 50%;
+
+}
+
+.temperature {
+  position: relative;
+  font-size: 54PX;
+  line-height: 1;
+  font-weight: bold;
+
+}
+
+.temperature span {
+  
+  font-size: 30px;
+  top: -6px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 20PX;
+  text-transform: capitalize;
+}
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  /* Add space between elements and align them to opposite sides */
+  align-items: center;
+  /* Align items vertically in the center */
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  right: 10px;
+  left: 10px;
+  bottom: 40px;
+}
+
+.humidity i.bx{
+  font-size: 46px;
+  margin-right: 10px;
+}
+
+.wind i.bx {
+  font-size: 46px;
+  margin-right: 10px;
+}
+.text-wind{
+  font-size:25px;
+  font-family: 500;
+
+}
+.text-humidity{
+  font-size: 25px;
+    font-family: 500;
+}
+p{
+  font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.not-found {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 200px;
+}
+.not-found img{
+  width: 50%;
+  
+}
+
+.not-found p{
+  font-weight: 500;
+  margin-top: 12px;
+  font-size: 22px;
+  color: #fdfcfc;
+  text-align: center;
+  margin-right: 350px;
+}
+
+/* This is the base CSS for all screen sizes */
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px */
+.not-found img {
+    width: 35%;
+    margin-right: 420px;
+
+    margin-top: 20px;
+    /* Adjust the width as needed */
+  }
+
+  .not-found p {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    margin-right: 350px;
+    /* Adjust the margin as needed */
+  }
+}
+
+/* Media query for screens with a minimum width of 769px */
+@media screen and (max-width: 769px) {
+    .not-found img {
+        width: 35%;
+       
+        margin-left: 150px;
+       
+    
+        margin-top: 10px;
+        /* Adjust the width as needed */
+      }
+    
+      .not-found p {
+        font-size: 23px;
+        /* Adjust the font size as needed */
+        margin-right: 400px;
+        /* Adjust the margin as needed */
+      }
+
+}
+
+
+/* Media query for screens with a minimum width of 400px */
+@media screen and (min-width: 400px) {
+  .not-found img {
+    width: 75%;
+    margin-left: -120px;
+    margin-top: 10px;
+  }
+
+  .not-found p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -100px;
+    text-align: center;
+    white-space: nowrap;
+    /* Prevent line breaks */
+  }
+}
+
+/* Media query for larger screens (e.g., when the screen is maximized) */
+@media screen and (min-width: 1200px) {
+  .not-found img {
+    width: 25%;
+   margin-left: 300px;
+  
+    margin-top: 10px;
+    /* Adjust the width as needed */
+  }
+
+  .not-found p {
+    font-size: 23px;
+    /* Adjust the font size as needed */
+    margin-right: 300px;
+    /* Adjust the margin as needed */
+  }
+}
+

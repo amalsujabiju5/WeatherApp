@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App using HTML CSS and Javascript </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="Enter Your Location">
+            <button><i class='bx bx-search'></i></button>
+        </div>
+        <!--For weather box-->
+        <div class="weather-box">
+        <div class="box">
+            <div class="info-weather">
+                <div class="weather">
+                    <img  src="images/cloud.png" alt="cloud">
+                    <p class="temperature">15<span>°C</span></p>
+                    <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--For weather details-->
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="bx bx-water"></i>
+                <div class="text-humidity">0%</div>
+                <div class="info-humidity"></div>
+                <P>Humidity</P>
+            </div>
+        
+
+        <div class="wind">
+                <i class="bx bx-wind"></i>
+                <div class="text-wind">10km/hr</div>
+                <div class="info-wind"></div>
+                <P>Wind</P>
+            </div>
+
+            </div>
+    </div>
+
+    <div class="not-found">
+        <div class="box">
+            <img src="images/404.png">
+            <p>Oops! Loaction Not Found 😞</p>
+        </div>
+</div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
